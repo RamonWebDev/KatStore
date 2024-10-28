@@ -2,6 +2,7 @@
 body, html {
     margin: 0;
     padding: 0;
+    background-color: #BEA9DF;
 }
 
 /* Navar */
@@ -31,4 +32,29 @@ body, html {
 .carousel-item img {
     height: 100vh;
     object-fit: cover;
+}
+
+.store{
+    margin-top: 20px;
+}
+
+/* Card */
+.card{
+    height: 400px;
+    width: 400px;
+    background-size: cover; 
+    background-position: center;
+    color: white !important;
+    vertical-align: bottom !important;
+    position: relative;
+}
+
+/*moving text to the bottom*/
+.card .card-body {
+    position: absolute;
+    bottom: 0; /* Aligns the text at the bottom */
+    width: 100%; /* Full width to align text properly */
+    background: rgba(0, 0, 0, 0.5); /* Optional: Transparent background for better text readability */
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding is included in the width */
 }
