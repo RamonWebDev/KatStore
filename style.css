@@ -1,25 +1,13 @@
-/* Transparent navbar */
-.navbar {
-    background-color: transparent !important;
-    z-index: 10; /* Ensure it stays on top of the carousel */
-}
-  
-/* Ensure the carousel is behind the navbar */
-.carousel {
-    position: relative;
-    z-index: 1;
-}
-  
-/* Carousel height to fill the viewport */
-.carousel-item img {
-    height: 100vh;
-    object-fit: cover;
-}
-  
 /* Remove margin to avoid any spacing issues */
 body, html {
     margin: 0;
     padding: 0;
+}
+
+/* Navar */
+.navbar {
+    background-color: transparent !important;
+    z-index: 10;
 }
 
 /* Ensure the text inside the navbar is white */
@@ -31,4 +19,16 @@ body, html {
 /* Optional: Change color on hover */
 .navbar .nav-link:hover {
     color: #f8f9fa !important; /* Slightly lighter white */
+}
+  
+/* Carousel */
+.carousel {
+    position: relative;
+    z-index: 1;
+}
+  
+/* Carousel height to fill the viewport */
+.carousel-item img {
+    height: 100vh;
+    object-fit: cover;
 }
