@@ -70,11 +70,17 @@ body, html {
 /*Client review */
 .client-reviews{
     background-color: #F3F4F6;
+    margin-top: 20px;
+    height: 400px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 
 }
 
 .reviews { 
     text-align: center;
+    margin-top: 20px;
 }
 
 .reviews h3{
@@ -115,3 +121,47 @@ body, html {
 .linkIcons a {
     color: #000;
 }
+
+.aboutUs{
+    margin-top: 20px;
+}
+
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 800px) {
+    .card{
+        height: 200px;
+        width: 300px;
+        font-size: 10px;
+        left: 30px;
+    }
+    .card .card-body{
+        background: rgba(0, 0, 0, 0);
+        text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    }
+
+    .carousel-inner img {
+        height: 250px;  /* Smaller height for mobile screens */
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.2rem;  /* Adjust title size */
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem;  /* Adjust text size */
+    }
+
+    /* Optional: Center-align captions on smaller screens */
+    .carousel-caption {
+        bottom: 10px;  /* Adjust caption placement */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;  /* Make captions take up more space */
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        height: 30px;  /* Reduce arrow icon size */
+        width: 30px;
+    }
+  }
