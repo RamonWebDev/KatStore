@@ -33,7 +33,6 @@ body, html {
 /* Carousel */
 .carousel {
     position: relative;
-    z-index: 1;
 }
   
 /* Carousel height to fill the viewport */
@@ -41,6 +40,11 @@ body, html {
     height: 100vh;
     object-fit: cover;
 }
+
+.carousel button{
+    z-index: 3;
+}
+
 
 .store{
     margin-top: 20px;
@@ -129,7 +133,7 @@ body, html {
 /*Snow*/
 .snow, .snow:after, .snow:before{
     content: "";
-    z-index: 2;
+    z-index: 1;
     position: absolute;
     top: -1500px;
     right: 0;
